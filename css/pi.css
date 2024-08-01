@@ -1,0 +1,36 @@
+
+.pibox {
+    border: 1px solid black;
+}
+
+#explanation {
+    width: 90%;
+}
+
+.itnr {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+}
+
+.pi-circle {
+    width: 50%;
+    float: left;
+}
+
+.pi-sticks {
+    width: 50%;
+    float: right;
+}
+
+.pi-epi {
+    margin-top: 670px;
+    width: 75%;
+}
+
+.slid {
+    width: 250px;
+}
+
+.results {
+    width: 90%;
+}

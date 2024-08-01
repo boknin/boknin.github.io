@@ -1,0 +1,75 @@
+html {
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+a, .concerts {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.menu {
+    background-color: white;
+    padding: 12px;
+}
+
+p {
+    padding: 1%;
+    background-color: white;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span.top-bar {
+    padding: 10px;
+}
+
+span.top-bar:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+span.selected {
+    background-color: black;
+    color: white;
+    cursor: default;
+}
+
+a.top-bar {
+    color: inherit;
+    text-decoration: none;
+}
+
+.concert-block {
+    display: none;
+    transition: height 1s;
+}
+
+.concerts:hover {
+    cursor: pointer;
+}
+
+.photo-selected {
+    background-color: black;
+    color: white;
+}
+
+.photo {
+    cursor: pointer;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2px;
+    width: 20px;
+}
+
+.photo:hover {
+    background-color: rgb(177, 177, 177);
+    border: 1px solid black;
+}
+
+img.pct {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border: 2px solid black;
+}

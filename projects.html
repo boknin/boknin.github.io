@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css" charset="utf-8">
+        <link rel="stylesheet" href="css/pi.css" charset="utf-8">
+        <link rel="icon" href="icon.ico">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/pi.js" defer></script>
+        <script type="text/javascript" src="js/pi2.js" defer></script>
+
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+
+        <title>
+            Projects | Leo Smulansky
+        </title>
+    </head>
+    <body>
+        <div class="menu">
+            <span class="top-bar"><a class="top-bar" href="index.html">Home</a></span>
+            <span class="top-bar selected">Projects</span>
+            <span class="top-bar"><a class="top-bar" href="links.html">Links</a></span>
+        </div>
+        
+        <br>
+
+        <h4>Two Monte Carlo methods to approximate <span class="itnr">π</span></h4>
+
+        <div class="pi-circle">
+
+            <p id="explanation">
+                The quarter-circle has a radius of 1, giving it an area of <span class="itnr">π</span>/4. 
+                Since this is also the proportion of the box that the quarter-circle occupies, 
+                this means if we randomly plot points in the box, the expected proportion of points 
+                inside the circle is <span class="itnr">π</span>/4. </p>
+
+                <svg id="qCirc" class="pibox" width="350" height="350"></svg>
+
+            <div>
+                <input class="slid" type="range" value="1" min="1" max="1000" id="slider"> <span id="numpts">10</span> points
+            </div>
+            <p class="results">
+                Points inside circle: <span id="insideCircle"></span> <br>
+                Proportion of points inside circle (approximates <span class="itnr">π</span>/4): <br>
+                <span id="quotient"></span> <br>
+                Approximation of <span class="itnr">π</span>: <span id="approx"></span>
+            </p>
+        </div>
+
+        <div class="pi-sticks">
+
+            <p id="explanation">
+                The idea behind this approximation comes from <a href="https://en.wikipedia.org/wiki/Buffon%27s_needle_problem" target="_blank">Buffon's needle</a> (although I learned about it from <a href="https://www.wikihow.com/Video/Calculate-Pi-by-Throwing-Frozen-Hot-Dogs" target="_blank">here</a>).
+                If we throw a bunch of sticks at parallel lines where the spacing between the lines is the equal to the length of the sticks, then
+                the expected proportion of sticks that cross the lines is 2/<span class="itnr">π</span>.
+            </p>
+
+            <svg id="hotDog" class="pibox" width="350" height="350"></svg>
+            <div>
+                <input class="slid" type="range" value="1" min="1" max="800" id="slider2"> <span id="numsticks">5</span> sticks
+            </div>
+            <p class="results">
+                Sticks that cross: <span id="crossingSticks"></span> <br>
+                Inverse of proportion of sticks that cross lines (approximates <span class="itnr">π</span>/2): <br>
+                <span id="recip"></span> <br>
+                Approximation of <span class="itnr">π</span>: <span id="piDog"></span>
+            </p>
+        </div>
+
+        <p class="pi-epi">
+            Neither method is accurate enough for practical use, but they both have interesting visual representations. <br>
+        </p>
+
+
+    <h4>Letterboxd Recommender</h4>
+
+    <h5>(in progress)</h5>
+
+    <!-- <h5>To see it in action: <a href="">Go here</a></h5>
+
+    <h5>How it works:</h5><p>Matrix factorization models all known ratings </p> -->
+
+
+
+    <h4>Stay tuned for more!</h4>
+    </body>
+</html>
