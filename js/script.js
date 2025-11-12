@@ -1,4 +1,4 @@
-var me = "https://i.imgur.com/PDVUnQM.jpg";
+var me = "https://i.imgur.com/xbbacYQ.jpeg";
 var meAtMcgill = "https://upload.wikimedia.org/wikipedia/commons/d/da/Burnside_Hall_02.jpg";
 var kiwi = "https://i.imgur.com/PCQktZP.jpg";
 
